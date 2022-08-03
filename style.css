@@ -1,0 +1,43 @@
+:root {
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+.right h1 {
+    font-size: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+.fieldsets {
+    display: flex;
+    flex-direction: row;
+}
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.right {
+    justify-content: center;
+}
+
+.left {
+    background-color: gray;
+    width: 40vw;
+    height: 100vh;
+}

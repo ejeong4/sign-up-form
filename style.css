@@ -12,6 +12,8 @@
     --dark-color: #2E0F15;
     --light-color-1: #BEC5AD;
     --light-color-2: #DEAD5B;
+    --dark-color-1: #939b80;
+    --dark-color-2: #7a8365;
     font-family: "helvetica", sans-serif;
     text-transform: uppercase;
     font-weight: 100;
@@ -65,6 +67,16 @@ input {
     color: #BEC5AD;
 }
 
+input:valid:focus {
+    border: 3px solid #547e65;
+    color: #547e65;
+}
+
+input:invalid:focus {
+    border: 3px solid #be8d81;
+    color: #be8d81;
+}
+
 button.create-account {
     background-color: var(--light-color-1);
     border: 0px none;
@@ -77,6 +89,15 @@ button.create-account {
     color: #2E0F15;
     font-size: 24px;
     margin: 12px;
+}
+
+button:hover {
+    background-color: var(--dark-color-1);
+    cursor: pointer;
+}
+
+button:active {
+    background-color: var(--dark-color-2);
 }
 
 .fieldsets {
@@ -111,6 +132,7 @@ fieldset>* {
 .left {
     background-color: var(--light-color-1);
     width: 60vw;
+    height: 110vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

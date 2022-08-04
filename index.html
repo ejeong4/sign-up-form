@@ -19,24 +19,24 @@
     <div class="right">
         <h1 class="title">Ever wished your life could be something <em>more</em>? This is the entrance to your <em>dreams</em>. </h1>
         <h1 class="subtitle">Sign up <em>below</em> to get started!</h1>
-        <form action="" method="post">
+        <form action="#">
             <h1>Let's do this!</h1>
             <div class="fieldsets">
                 <fieldset>
                     <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" placeholder="">
+                    <input type="text" id="first-name" placeholder="" required>
                     <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="">
+                    <input type="email" id="email" placeholder="" required>
                     <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="">
+                    <input type="password" id="password" placeholder="" required>
                 </fieldset>
                 <fieldset>
                     <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" placeholder="">
+                    <input type="text" id="last-name" placeholder="" required>
                     <label for="number">Phone Number</label>
-                    <input type="text" id="number" pattern="" title="">
+                    <input type="text" id="number" pattern="^[1-9]\d{2}-\d{3}-\d{4}" title="Please enter phone number (ex. 123-456-7890)">
                     <label for="confirm-pass">Confirm Password</label>
-                    <input type="password" id="confirm-pass" placeholder="">
+                    <input type="password" id="confirm-pass" placeholder="" required>
                 </fieldset>
             </div>
             <button type="submit" class="create-account">Create Account</button>

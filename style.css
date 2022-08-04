@@ -1,8 +1,18 @@
+@font-face {
+    font-family: "helvetica";
+    src: url(fonts/Helvetica.ttc);
+}
+
+@font-face {
+    font-family: "big-caslon";
+    src: url(fonts/Big\ Caslon\ Medium.ttf);
+}
+
 :root {
     --dark-color: #2E0F15;
     --light-color-1: #BEC5AD;
     --light-color-2: #DEAD5B;
-    font-family: Helvetica, sans-serif;
+    font-family: "helvetica", sans-serif;
     text-transform: uppercase;
     font-weight: 100;
 }
@@ -15,11 +25,16 @@ body {
 }
 
 form {
+    font-family: "big-caslon", 'Times New Roman', Times, serif;
+    font-weight: 100;
+    text-transform: lowercase;
+    font-style: italic;
     display: flex;
     flex-direction: column;
     background-color: var(--dark-color);
     color: var(--light-color-1);
     border: 3px solid var(--light-color-1);
+    padding: 15px 0 15px 15px;
 }
 
 fieldset {
@@ -27,26 +42,75 @@ fieldset {
     flex-direction: column;
 }
 
+svg {
+    margin: 0 50px;
+}
+
+a {
+    color: #DEAD5B;
+}
+
+em {
+    font-family: "big-caslon", serif;
+    text-transform: lowercase;
+    font-size: 42px;
+    font-weight: 100;
+}
+
+input {
+    border: 0 none;
+    background-color: #2E0F15;
+    height: 25px;
+    border: 3px solid #BEC5AD;
+    color: #BEC5AD;
+}
+
+button.create-account {
+    background-color: var(--light-color-1);
+    border: 0px none;
+    width: 180px;
+    height: 40px;
+    font-family: "big-caslon", serif;
+    font-weight: 100;
+    font-style: italic;
+    text-transform: lowercase;
+    color: #2E0F15;
+    font-size: 24px;
+    margin: 12px;
+}
+
 .fieldsets {
     display: flex;
     flex-direction: row;
+    font-size: 16px;
+    font-family: "helvetica", serif;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+.fieldsets>fieldset {
+    border: 0px none;
+}
+
+fieldset>* {
+    margin: 10px 0;
 }
 
 .right {
     justify-content: center;
     display: flex;
     flex-direction: column;
+    padding: 50px;
 }
 
 .right>* {
     margin: 15px 100px;
-    /* width: min(300px, 100%); */
+    width: min(100%, 600px);
 }
 
 .left {
     background-color: var(--light-color-1);
-    width: 40vw;
-    height: 100vh;
+    width: 60vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
